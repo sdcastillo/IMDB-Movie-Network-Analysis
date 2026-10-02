@@ -27,7 +27,7 @@ $border-color: #d5e6ea;
 $code-bg-color: #eef6f6;
 $code-text-color: #123055;
 
-@import "jekyll-theme-cayman";
+@import "{{ site.theme }}";
 
 body.samwiki {
   --sw-ink: #122033;
