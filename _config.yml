@@ -18,3 +18,4 @@ plugins:
 
 exclude:
   - README.md
+  - IMDB_network_final.Rmd
