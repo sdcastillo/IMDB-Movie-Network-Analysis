@@ -1,0 +1,26 @@
+# SamWiki skin on the Cayman remote theme.
+# https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
+#
+# assets/css/style.scss sets the SamWiki color tokens, then imports
+# jekyll-theme-cayman. The home page sets samwiki: true.
+# Skin files follow sdcastillo/sdcastillo.github.io:
+#   assets/css/style.scss
+#   _layouts/default.html
+#   _includes/head-custom.html
+#   _includes/samwiki-nav.html
+
+title: IMDB Movie Network
+description: Films linked by IMDB recommendations. The drawing that made connected representations click.
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+show_downloads: false
+markdown: kramdown
+
+# README.md stays the GitHub overview. The R Markdown notes open with their
+# own YAML front matter, so leave them out of the Pages build.
+exclude:
+  - README.md
+  - IMDB_network_final.Rmd
+  - vendor
