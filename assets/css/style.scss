@@ -1,13 +1,13 @@
 ---
 ---
 
-// SamWiki skin for the supported Cayman theme.
+// SamWiki skin for the Cayman remote theme.
 //
 // Copy this file with the theme contract:
-//   _config.yml                 theme: jekyll-theme-cayman
+//   _config.yml                 remote_theme: pages-themes/cayman@v0.2.0
 //   _layouts/default.html       adds class="samwiki" when page.samwiki is true
 //   _includes/head-custom.html  Outfit + Source Sans 3
-//   _includes/samwiki-nav.html  Home (SamWiki), Running, About, Code, GitHub
+//   _includes/samwiki-nav.html  Home, About, Code, Linktree
 //
 // Setup follows GitHub's guide:
 // https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
@@ -586,4 +586,30 @@ body.samwiki :focus-visible {
   body.samwiki .sw-card:hover {
     transform: none;
   }
+}
+
+// Figures on the project home page. The SamWiki palette above is unchanged.
+body.samwiki .main-content figure {
+  margin: 1.35rem 0 1.7rem;
+}
+
+body.samwiki .main-content figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background: #fff;
+  border: 1px solid var(--sw-line);
+  border-radius: 16px;
+  box-shadow: var(--sw-shadow);
+}
+
+body.samwiki .main-content figcaption {
+  margin-top: 0.55rem;
+  color: var(--sw-muted);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+body.samwiki .main-content figcaption a {
+  font-weight: 600;
 }
