@@ -1,0 +1,21 @@
+# SamWiki skin on the Cayman theme.
+# https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
+# Remote theme: https://github.com/pages-themes/cayman (v0.2.0)
+# Skin files match https://github.com/sdcastillo/sdcastillo.github.io
+#   assets/css/style.scss
+#   _layouts/default.html
+#   _includes/head-custom.html
+#   _includes/samwiki-nav.html
+# Pages set `samwiki: true` in front matter.
+
+title: IMDB Movie Network Analysis
+description: A network plot of films joined by IMDb's recommended-movie links.
+remote_theme: pages-themes/cayman@v0.2.0
+show_downloads: false
+markdown: kramdown
+plugins:
+  - jekyll-remote-theme
+
+exclude:
+  - README.md
+  - IMDB_network_final.Rmd
